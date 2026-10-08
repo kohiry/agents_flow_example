@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "ddgs>=9.16.0",
+    "duckduckgo-search>=8.1.1",
     "langchain>=1.4.3",
-    "langchain-community[all]>=0.4.2",
+    "langchain-community>=0.4.2",
     "langchain-ollama>=1.1.0",
     "langgraph>=1.2.14",
     "pydantic>=2.13.5",
