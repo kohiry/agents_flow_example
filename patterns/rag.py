@@ -135,6 +135,7 @@ if __name__ == "__main__":
         embeddings=embeddings,
     )
     graph = builder.compile()
-    question = "What is a difference between Claude code and Postgres?"
+    # question = "What is a difference between Claude code and Postgres?"
+    question = "Do you know what is banana?"
     result = graph.invoke({"question": question, "query": question, "retries": 0})
     print(result)
