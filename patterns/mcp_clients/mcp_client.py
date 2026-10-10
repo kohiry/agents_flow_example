@@ -1,6 +1,6 @@
-from mcp.server.mcpserver import MCPServer
+from mcp.server.fastmcp import FastMCP
 
-mcp = MCPServer("Order Server")
+mcp = FastMCP("Order Server")
 
 ORDERS = [
     {"id": 1, "item": "Keyboard", "status": "shipped"},
@@ -16,11 +16,13 @@ def list_orders() -> list[dict]:
 
 
 @mcp.tool()
-def order_by_id(id: int) -> dict:
-    """Return order by id"""
+def get_order(order_id: int) -> dict:
+    """Get an order by its ID."""
     for order in ORDERS:
-        if order["id"] == id:
+        if order["id"] == order_id:
             return order
+
+    return {"error": f"Order {order_id} not found"}
 
 
 @mcp.tool()
@@ -39,3 +41,7 @@ def del_order(id: int) -> int:
             del ORDERS[i]
             break
     return 200
+
+
+if __name__ == "__main__":
+    mcp.run(transport="stdio")
