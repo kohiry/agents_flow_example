@@ -1,7 +1,7 @@
 from langchain.tools import tool
 from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_community.utilities import DuckDuckGoSearchAPIWrapper
-from ollama_client import get_client_func
+from agents_flow_example.ollama_client import get_client_func
 from pydantic import BaseModel, Field
 
 search = DuckDuckGoSearchRun(api_wrapper=DuckDuckGoSearchAPIWrapper(region="us-en"))

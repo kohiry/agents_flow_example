@@ -1,7 +1,7 @@
 from pprint import pprint
 
 from langchain.tools import tool
-from ollama_client import get_client_func
+from agents_flow_example.ollama_client import get_client_func
 
 
 @tool

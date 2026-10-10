@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from ollama_client import get_client_func
+from agents_flow_example.ollama_client import get_client_func
 from pydantic import BaseModel, Field
 
 

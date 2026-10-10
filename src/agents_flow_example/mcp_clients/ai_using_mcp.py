@@ -6,7 +6,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 from langgraph.constants import START
 from langgraph.graph import MessagesState, StateGraph
 from langgraph.prebuilt import ToolNode, tools_condition
-from ollama_client import get_client_func
+from agents_flow_example.ollama_client import get_client_func
 
 BASE_DIR = Path(__file__).resolve().parent
 SERVER_PATH = BASE_DIR / "mcp_client.py"

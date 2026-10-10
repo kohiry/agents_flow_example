@@ -3,7 +3,7 @@ from typing import TypedDict
 import chromadb
 from langgraph.constants import END, START
 from langgraph.graph import StateGraph
-from ollama_client import get_client_func
+from agents_flow_example.ollama_client import get_client_func
 from pydantic import BaseModel, Field
 from sentence_transformers import SentenceTransformer
 
