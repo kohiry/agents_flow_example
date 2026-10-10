@@ -1,5 +1,7 @@
 # agents_flow_example
 
+**English** | [Русский](README.ru.md)
+
 Small, self-contained examples of LLM agent patterns built with LangChain, LangGraph and MCP.
 Everything runs locally on a small Ollama model (`qwen3:0.6b-q4_K_M`), so no API keys are needed.
 
